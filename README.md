@@ -1359,42 +1359,6 @@ python3 -m uvicorn apps.backend.app:app --host 127.0.0.1 --port 8001
 python3 apps/backend/migrate_add_tracking.py
 ```
 
----
-
-## 📝 Code-Übersicht
-
-### Unnötiger Code
-
-**Alle Python-Dateien sind notwendig:**
-
-- ✅ `app.py` - Haupt-API (notwendig)
-- ✅ `db.py` - Datenbank-Verbindung (notwendig)
-- ✅ `models.py` - Datenbank-Modelle (notwendig)
-- ✅ `settings.py` - Konfiguration (notwendig)
-- ✅ `ingest.py` - Content-Import (notwendig)
-- ✅ `fts.py` - Volltextsuche (notwendig)
-- ✅ `llm.py` - LLM-Integration (notwendig)
-- ✅ `generator.py` - Artikel-Assemblierung (notwendig)
-- ✅ `markdown_writer.py` - Markdown-Export (notwendig)
-- ✅ `markdown_cleaner.py` - Post-Processing (notwendig)
-- ✅ `scheduler.py` - Automatische Generierung (notwendig)
-- ✅ `term_labs.py` - Termlabs-Integration (notwendig, optional nutzbar)
-- ✅ `git_helper.py` - Git-Integration (notwendig, optional nutzbar)
-- ✅ `migrate_add_tracking.py` - Migration (einmalig, kann behalten werden)
-- ✅ `test_termlabs_call.py` - Test-Script (Test-Tool, kann behalten werden)
-
-**Optional (kann entfernt werden, wenn nicht benötigt):**
-- `test_termlabs_call.py` - Nur für Tests, kann entfernt werden
-
----
-
-## 📚 Weitere Dokumentation
-
-- **Chunk-Tracking**: Siehe `apps/backend/CHUNK_TRACKING.md`
-- **Scheduler**: Siehe `apps/backend/SCHEDULER_INFO.md`
-- **Frontend**: Siehe `apps/frontend/README.md`
-
----
 
 ## 🔐 Sicherheit
 
@@ -1405,24 +1369,10 @@ python3 apps/backend/migrate_add_tracking.py
 
 ---
 
-## 📄 Lizenz
-
-Siehe Projekt-Lizenz-Datei.
-
----
-
-## 🤝 Support
-
-Bei Problemen:
-1. Prüfe Logs im Server-Terminal
-2. Prüfe `.env` Konfiguration
-3. Prüfe Datenbank-Status
-4. Teste einzelne Endpoints
 
 ---
 
 **Version:** 1.0  
-**Letzte Aktualisierung:** 2025-11-05
-# ai-blog-termlabs-v3
+
 # ai-blog-termlabs-v3
 
